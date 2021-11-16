@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title%}
+Welcome to HillsTask!
+{% endblock title %}
+
+{% block content %}
+    <div class="row mt-5">
+        <div class="col-lg-4">
+            <img src="{% static 'images/img4.jpg' %}" alt="Pics" width="360" height="250" class="rounded-lg shadow-lg">
+        </div>
+        <div class="col-lg-4">
+            <img src="{% static 'images/img2.jpg' %}" alt="Pics" width="360" height="250" class="rounded-lg shadow-lg">
+        </div>
+        <div class="col-lg-4">
+            <img src="{% static 'images/img5.jpg' %}" alt="Pics" width="360" height="250" class="rounded-lg shadow-lg">
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-md-10 offset-md-1">
+            <center><p class="h1 text-white">Simple And Easy To Use, Fun and User Friendly!</p></center>
+            <center><p class="h2 text-light mt-3">"Plan Your Day To Day Activities!"</p></center>
+            <center><p class="h3 text-dark">HILLSTASK Helps You Keep Track of Your Tasks.</p></center>
+            <center><p class="h5 text-light">♦ Use HillsTask Today! ♦<p></center>
+            <center><a href="{% url 'home' %}"><button type="button" class="btn btn-primary btn-lg btn-block mt-3 shadow-lg">Let's Get Started</button></a?</center>
+        </div>
+    </div>
+{% endblock content%}
